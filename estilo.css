@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+}
+body{
+    background-image: url(./img/fondooo.svg);
+}
+section h1{
+    text-align: center;
+    font-size: 3em;
+}
+/*Desk Nav*/
+.nav{
+    background-color: blueviolet;
+    height: 69px;
+}
+.nav__li{
+    display: inline-block;
+    padding: 12px;
+}
+.nav__ul{
+    text-align: center;
+}
+.nav__li a{
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+}
+.nav__li a:hover{
+    color: rgb(156, 54, 122);
+}
+/*movil nav*/
+.nav__responsive-ul{
+    display: none;
+}
+.nav__responsive-button-container{
+    width: 100vw;
+    background-color: rgb(189, 82, 123);
+    margin-top: -69px;
+    padding: 9px 20px;
+    position: absolute;
+    z-index: 100;
+}
+.nav__responsive-button{
+    max-height: 50px;
+    float: right;
+    padding: 6px 20px;
+}
+.nav__responsive-li{
+    padding: 7% 20px;
+    text-align: center;
+}
+.nav__li-container .nav__responsive-li a{
+    color: wheat;
+    font-weight:900;
+}
+.nav__li-container{
+    position: relative;
+    top: -300px;
+    transition: all 1s;
+    z-index: 1;
+}
+.nav__li-container .nav__responsive-li a:hover{
+    color:darkorchid;
+}
+@media only screen and (max-width:500px){
+    .nav__ul{
+        display: none;
+    }
+    .nav__responsive-ul{
+        display: block;
+        width: 100%;
+        position: absolute;
+        margin-top: 70px;
+    }
+    .nav__responsive-ul:hover > .nav__li-container{
+        top: 0;
+        height: 100% ;
+        margin-left: 1%;
+        margin-right: 1%;
+        border-radius: 6%;
+    background-color: darkmagenta
+    }
+}
